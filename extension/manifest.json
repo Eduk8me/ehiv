@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Hide Insert Video",
+  "version": "1.0",
+  "description": "Hides the Insert Video menu item on Google Slides.",
+  "content_scripts": [
+    {
+      "matches": ["https://docs.google.com/presentation/*"],
+      "js": ["ehiv.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
+
